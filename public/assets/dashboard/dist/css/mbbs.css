@@ -1,0 +1,159 @@
+/*------------------------ mycss---------------- */
+#logomedical{
+    height: 56px;
+    margin-top: -14px;
+  }
+  .btn-link{
+    text-decoration: unset!important;
+  }
+  .card-header{
+    background-color: #fff;
+    color: #000!important;
+  }
+  .card-header h3 a{ 
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .card-header h5 a,.card-header h3 a{
+    color: #000;
+
+  }
+  #large{
+    color: blue;
+    font-size: 18px;
+    
+  }
+  
+
+td {
+
+    padding: 16px;
+    text-align: center;
+
+}
+#myTable tr:hover ,.modal-header,.main-sidebar{
+  color: #fff;
+
+    background: linear-gradient(to right, #141e30, #243b55);
+
+  }
+  #myTable tr:hover{
+  cursor: pointer;
+  }
+  .card-header i{
+      float: right;
+  }
+
+  #heading-1-1 a,#heading-1-1-2 a{
+      color: #000;
+  }
+  .custom-file label{
+    width: 150px;
+    text-align: center;
+  }
+  .modal .close{
+    color: #fff;
+  }
+  #hr{
+    border-top: 1px solid #ffffff63
+  }
+  .btn-sm{
+    padding: 2px;
+    font-size: 12px;
+  }
+  input,select{
+display: block!important;
+border: none!important;
+    border-bottom-color: currentcolor!important;
+    border-bottom-style: none!important;
+    border-bottom-width: medium!important;
+box-sizing: border-box!important;
+  }
+  input,select{
+  border-bottom: 1px solid rgb(221, 217, 217)!important;
+  margin-top: -11px;
+  }
+  .form-group{
+margin-top: -10px;
+  }
+  label{
+    font-weight: 600;
+  }
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+#mbbsfee .form-group{
+  display: flex;
+  margin-bottom: 23px;
+  justify-content: space-between;
+}
+#addressborder{
+  border: 1px solid #80808038;
+margin: 10px 0 10px 0;
+padding: 10px;
+}
+#drop{
+  display: flex;
+  float: right;
+  position: relative;
+  top: 40px;
+}
+  .form-control:focus{
+    border-bottom: 3px solid  #243b55  !important;
+    box-shadow: none;
+
+  }
+#profile{
+  border-radius: 50%;
+width: 100px;
+position: relative;
+left: 18px;
+top: 10px;
+border: 3px solid;
+}
+#overflow{
+  overflow-x: auto;
+}
+#profilecard{
+  height: 130px;
+}
+#profilebody{
+  padding-top: 5px;
+}
+.table th ,.table td{
+  padding: 6px;
+}
+.form-control[readonly],.form-control:disabled,.form-control-file:disabled {
+  background-color: #fff;
+  border-bottom: unset;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==) repeat;
+}
+#delete{
+  width: 120px;
+}
+.form-control[readonly]:focus {
+  border-bottom: unset!important;
+}
+
+@media only screen and (max-width: 768px) {
+#profilecard{
+  height: 100%;
+}
+}
+  
+  
+  
