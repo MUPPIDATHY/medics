@@ -39,9 +39,88 @@ window.onclick = function(event) {
 // To make elements readonly
 $('#myModal :input').prop('readonly', true); 
 $('#sign12').prop('readonly', true);
+$("#file").prop('disabled', true);
 
 
+
+var c=document.getElementById('images').value;
+if (c<1) {
+  document.getElementById("demoo").innerHTML = "";
+}else{
+  alert(c);
+  document.getElementById("demoo").innerHTML = c;
+
+}
 
 
 
       });
+      $(function () {
+        $("#btnAddd").bind("click", function () {
+            var div = $("<tr />");
+            div.html(GetDynamicTextBox(""));
+            $("#TextBoxContainerr").append(div);
+        });
+        $("body").on("click", ".remove", function () {
+          if($("tr").length>1){
+      
+            $(this).closest("tr").remove();
+          }
+            else{
+              alert("You have to upload at least one document.");
+            } 
+        });
+        
+       
+        $("#closee").click(function(){
+         
+              alert("You have to upload at least one document.");
+            
+      
+        }); 
+      });
+      function GetDynamicTextBox(value) {
+        return '<td> <div class="form-group"style="position: relative;top: -13px;"><i class="fa fa-caret-down "id="drop"></i><select class="form-control" id="exampleFormControlSelect1" style="width: 200px;"><option hidde="" selected="">&nbsp;</option><option>Community Certificate</option><option>Transfer Certificate</option><option>Conduct Certificate</option><option>Eligiblity Certificate</option><option>Migration Certificate</option><option>Admission Commitee Form</option></select></div></td>'
+       + '<td><input type="text" name="" class="form-control"></td>' + 
+       '<td><input type="Date" name="" class="form-control"></td>' + 
+       '<td><input type="text" name="" class="form-control"></td>' + 
+       '<td><input type="text" name="" class="form-control"></td>' + 
+      
+       '<td><button type="button" class="btn-sm" data-toggle="modal" data-target="#upload"><i class="fa fa-upload text-primary"></i></button> <button type="button"id="close" class="btn-sm btn-danger remove"><i class="fa fa-times" aria-hidden="true"></i></button></td>'
+      
+      }
+      
+$(function () {
+  $("#btnAdd").bind("click", function () {
+      var div = $("<tr />");
+      div.html(GetDynamicTextBox(""));
+      $("#TextBoxContainer").append(div);
+  });
+  $("body").on("click", ".remove", function () {
+    if($("tr").length>1){
+
+      $(this).closest("tr").remove();
+    }
+      else{
+        alert("You have to upload at least one document.");
+      } 
+  });
+
+ 
+  $("#close").click(function(){
+   
+        alert("You have to upload at least one document.");
+      
+
+  }); 
+});
+function GetDynamicTextBox(value) {
+  return '<td> <div class="form-group"style="position: relative;top: -13px;"><i class="fa fa-caret-down "id="drop"></i><select class="form-control" id="exampleFormControlSelect1" style="width: 200px;"><option hidde="" selected="">&nbsp;</option><option>Community Certificate</option><option>Transfer Certificate</option><option>Conduct Certificate</option><option>Eligiblity Certificate</option><option>Migration Certificate</option><option>Admission Commitee Form</option></select></div></td>'
+ + '<td><input type="text" name="" class="form-control"></td>' + 
+ '<td><input type="Date" name="" class="form-control"></td>' + 
+ '<td><input type="text" name="" class="form-control"></td>' + 
+ '<td><input type="text" name="" class="form-control"></td>' + 
+
+ '<td><button type="button" class="btn-sm" data-toggle="modal" data-target="#upload"><i class="fa fa-upload text-primary"></i></button> <button type="button"id="close" class="btn-sm btn-danger remove"><i class="fa fa-times" aria-hidden="true"></i></button></td>'
+
+}
